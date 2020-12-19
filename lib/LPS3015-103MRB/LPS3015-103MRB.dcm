@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LPS3015-103MRB
+D COILCRAFT - LPS3015-103MRB - INDUCTOR, SHLD, 10UH, 20%, 0.55A, SMD
+K
+F https://www.coilcraft.com/pdfs/lps3015.pdf
+$ENDCMP
+#
+#End Doc Library

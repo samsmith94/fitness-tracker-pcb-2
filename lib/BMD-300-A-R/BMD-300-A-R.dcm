@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP BMD-300-A-R
+D Bluetooth Modules (802.15.1) Bluetooth Module Low Energy 5.0
+K
+F https://www.u-blox.com/sites/default/files/BMD-300_DataSheet_%28UBX-19033350%29.pdf
+$ENDCMP
+#
+#End Doc Library

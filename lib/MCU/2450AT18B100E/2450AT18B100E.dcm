@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2450AT18B100E
+D 2450 MHz Antenna
+K
+F http://www.johansontechnology.com/datasheets/antennas/2450AT18B100.pdf
+$ENDCMP
+#
+#End Doc Library
