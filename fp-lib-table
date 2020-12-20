@@ -19,4 +19,5 @@
   (lib (name DRV2603RUNR)(type Legacy)(uri ${KIPRJMOD}/lib/DRV2603RUNR/DRV2603RUNR.mod)(options "")(descr ""))
   (lib (name W25Q128JVPIQ)(type Legacy)(uri ${KIPRJMOD}/lib/W25Q128JVPIQ/W25Q128JVPIQ.mod)(options "")(descr ""))
   (lib (name LPS3015-103MRB)(type Legacy)(uri ${KIPRJMOD}/lib/LPS3015-103MRB/LPS3015-103MRB.mod)(options "")(descr ""))
+  (lib (name FH33-4S-1SH_10_)(type Legacy)(uri ${KIPRJMOD}/lib/FH33-4S-1SH_10_/FH33-4S-1SH_10_.mod)(options "")(descr ""))
 )

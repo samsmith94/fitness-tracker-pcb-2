@@ -33,19 +33,19 @@ $EndComp
 $Comp
 L BAT-HLD-001:BAT-HLD-001 U2
 U 1 1 5FD3E532
-P 4550 1600
-F 0 "U2" H 5178 1546 50  0000 L CNN
-F 1 "BAT-HLD-001" H 5178 1455 50  0000 L CNN
-F 2 "BATHLD001" H 5200 1700 50  0001 L CNN
-F 3 "" H 5200 1600 50  0001 L CNN
-F 4 "Coin Cell Battery Holders Linx CR2032 Battery Holder" H 5200 1500 50  0001 L CNN "Description"
-F 5 "4" H 5200 1400 50  0001 L CNN "Height"
-F 6 "712-BAT-HLD-001" H 5200 1300 50  0001 L CNN "Mouser Part Number"
-F 7 "https://www.mouser.co.uk/ProductDetail/Linx-Technologies/BAT-HLD-001?qs=K5ta8V%252BWhta7hbVGfm4dqA%3D%3D" H 5200 1200 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Linx Technologies" H 5200 1100 50  0001 L CNN "Manufacturer_Name"
-F 9 "BAT-HLD-001" H 5200 1000 50  0001 L CNN "Manufacturer_Part_Number"
-	1    4550 1600
-	1    0    0    -1  
+P 4600 800
+F 0 "U2" H 5228 746 50  0000 L CNN
+F 1 "BAT-HLD-001" H 5228 655 50  0000 L CNN
+F 2 "BATHLD001" H 5250 900 50  0001 L CNN
+F 3 "" H 5250 800 50  0001 L CNN
+F 4 "Coin Cell Battery Holders Linx CR2032 Battery Holder" H 5250 700 50  0001 L CNN "Description"
+F 5 "4" H 5250 600 50  0001 L CNN "Height"
+F 6 "712-BAT-HLD-001" H 5250 500 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Linx-Technologies/BAT-HLD-001?qs=K5ta8V%252BWhta7hbVGfm4dqA%3D%3D" H 5250 400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Linx Technologies" H 5250 300 50  0001 L CNN "Manufacturer_Name"
+F 9 "BAT-HLD-001" H 5250 200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4600 800 
+	-1   0    0    1   
 $EndComp
 $Comp
 L APDS-9960:APDS9960 U3
@@ -1526,25 +1526,6 @@ F 3 "" H 7500 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+2V8 #PWR0141
-U 1 1 5FF3C9C3
-P 10000 2000
-F 0 "#PWR0141" H 10000 1850 50  0001 C CNN
-F 1 "+2V8" H 10015 2173 50  0000 C CNN
-F 2 "" H 10000 2000 50  0001 C CNN
-F 3 "" H 10000 2000 50  0001 C CNN
-	1    10000 2000
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	4400 1450 4400 2050
-Wire Notes Line
-	4400 2050 5250 2050
-Wire Notes Line
-	5250 2050 5250 1450
-Wire Notes Line
-	5250 1450 4400 1450
-$Comp
 L power:+2V8 #PWR0142
 U 1 1 5FF461A6
 P 6150 8000
@@ -1603,6 +1584,98 @@ F 3 "~" H 9000 4700 50  0001 C CNN
 	1    9000 4700
 	1    0    0    -1  
 $EndComp
-Text Notes 9400 1900 0    50   ~ 0
-ez csatlakozhatna inkább a gombelem feszültségére
+Text GLabel 4900 600  2    50   Input ~ 0
+BAT_P
+Wire Wire Line
+	4600 700  4700 700 
+Wire Wire Line
+	4700 700  4700 900 
+$Comp
+L power:GND #PWR0141
+U 1 1 5FE0CC73
+P 4700 900
+F 0 "#PWR0141" H 4700 650 50  0001 C CNN
+F 1 "GND" H 4705 727 50  0000 C CNN
+F 2 "" H 4700 900 50  0001 C CNN
+F 3 "" H 4700 900 50  0001 C CNN
+	1    4700 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 800  4800 800 
+Wire Wire Line
+	4800 800  4800 600 
+Wire Wire Line
+	4800 600  4900 600 
+Wire Wire Line
+	4600 600  4800 600 
+Connection ~ 4800 600 
+Text GLabel 4400 2000 0    50   Input ~ 0
+BAT_P
+Wire Wire Line
+	4400 2000 4500 2000
+Text GLabel 9900 2000 0    50   Input ~ 0
+BAT_P
+Wire Wire Line
+	9900 2000 10000 2000
+Text GLabel 9550 8350 0    50   Input ~ 0
+BUZZER
+Text GLabel 9550 8700 0    50   Input ~ 0
+GESTURE_INT
+Text GLabel 9550 8600 0    50   Input ~ 0
+GESTURE_SCL
+Text GLabel 9550 8500 0    50   Input ~ 0
+GESTURE_SDA
+Text GLabel 9550 8850 0    50   Input ~ 0
+DISPLAY_MOSI
+Text GLabel 9550 8950 0    50   Input ~ 0
+DISPLAY_SCK
+Text GLabel 9550 9050 0    50   Input ~ 0
+DISPLAY_DC
+Text GLabel 9550 9150 0    50   Input ~ 0
+DISPLAY_RESET
+Text GLabel 9550 9250 0    50   Input ~ 0
+DISPLAY_CS
+Text GLabel 9550 9350 0    50   Input ~ 0
+DISPLAY_BRIGHTNESS
+Text GLabel 9550 9500 0    50   Input ~ 0
+IMU_CS
+Text GLabel 9550 9700 0    50   Input ~ 0
+IMU_MOSI
+Text GLabel 9550 9600 0    50   Input ~ 0
+IMU_SCK
+Text GLabel 9550 9800 0    50   Input ~ 0
+IMU_MISO
+Text GLabel 9550 9900 0    50   Input ~ 0
+IMU_INT1
+Text GLabel 9550 10000 0    50   Input ~ 0
+IMU_INT2
+$Comp
+L FH33-4S-1SH_10_:FH33-4S-1SH_10_ J1
+U 1 1 5FE87160
+P 1550 4600
+F 0 "J1" H 2000 4865 50  0000 C CNN
+F 1 "FH33-4S-1SH_10_" H 2000 4774 50  0000 C CNN
+F 2 "FH334S1SH10" H 2300 4700 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/FH33-4S-1SH(10).pdf" H 2300 4600 50  0001 L CNN
+F 4 "HIROSE(HRS) - FH33-4S-1SH(10) - CONNECTOR, FFC/FPC, RCPT, 4POS, 1ROW" H 2300 4500 50  0001 L CNN "Description"
+F 5 "1.3" H 2300 4400 50  0001 L CNN "Height"
+F 6 "798-FH334S1SH10" H 2300 4300 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/FH33-4S-1SH10?qs=vnk2wBG9e15DLXmQ8%2FrpIg%3D%3D" H 2300 4200 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Hirose" H 2300 4100 50  0001 L CNN "Manufacturer_Name"
+F 9 "FH33-4S-1SH(10)" H 2300 4000 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C21
+U 1 1 5FF9FBEE
+P 8450 8650
+F 0 "C21" H 8565 8696 50  0000 L CNN
+F 1 "C" H 8565 8605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 8500 50  0001 C CNN
+F 3 "~" H 8450 8650 50  0001 C CNN
+	1    8450 8650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
