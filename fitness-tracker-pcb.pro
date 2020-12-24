@@ -1,4 +1,4 @@
-update=2020. 12. 21. 22:29:48
+update=2020. 12. 24. 21:01:49
 version=1
 last_client=kicad
 [general]
@@ -237,6 +237,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=IMU
+Clearance=0.2
+TrackWidth=0.2
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=Plus
 Clearance=0.2
 TrackWidth=0.625
